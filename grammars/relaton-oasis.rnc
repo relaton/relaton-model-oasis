@@ -1,0 +1,35 @@
+include "biblio-standoc.rnc" {
+
+BibDataExtensionType =
+  attribute schema-version { text }?,
+  doctype,
+  docsubtype?,
+  editorialgroup?,
+  ics*,
+  structuredidentifier*,
+  technology-area*
+
+DocumentType = 
+"specification" | "memorandum" | "resolution" | "standard" 
+
+}
+
+technology-area = element technology-area { TechnologyArea }
+
+TechnologyArea = 
+"Cloud" | 
+"Content-Technologies" | 
+"Cybersecurity" | 
+"e-Business" | 
+"eGov/Legal" | 
+"Emergency-Management" | 
+"Energy" | 
+"Information-Modeling" | 
+"IoT" | 
+"Lifecycle-Integration" | 
+"Localization" | 
+"Messaging" | 
+"Privacy/Identity" | 
+"Security" | 
+"SOA" | 
+"Web-Services" 
