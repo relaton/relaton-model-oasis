@@ -4,7 +4,6 @@ BibDataExtensionType =
   attribute schema-version { text }?,
   doctype,
   docsubtype?,
-  editorialgroup?,
   ics*,
   structuredidentifier*,
   technology-area*
